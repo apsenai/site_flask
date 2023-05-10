@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+{% extends 'base.html' %}
+{% block body %}
+        <div class="container">
+            <div class="page-header">
+                <h3 class="box-title col-md-12 ">Produtos</h3>
+            </div>
+            <form method="GET" action="">
+                <table class="table table-borderless table-hover" style="background-color:#3d8fb3">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Nome</th>
+                      <th>Tipo</th>
+                      <th>Preço</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in produtos %}
+                        <tr>
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.nome }}</td>
+                            <td>{{ item.tipo }}</td>
+                            <td>{{ item.preco }}</td>
+                        </tr>
+                    {% endfor %}
+                  </tbody>
+                    <a href="{{url_for('cadastro_produto')}}"> Adicionar </a>
+                    <a href="{{url_for('cadastro_produto')}}">  Excluir Produto</a>
+                </table>
+            </form>
+        </div>
+{% endblock %}
