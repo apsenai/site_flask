@@ -1,0 +1,402 @@
+{
+  "id": "2b439f00-e06e-44aa-82f7-76fd9034b757",
+  "version": "2.0",
+  "name": "teste_site",
+  "url": "http://127.0.0.1:5000/produtos",
+  "tests": [{
+    "id": "2a84a651-bcde-4255-aaa8-697edd56ec6c",
+    "name": "login",
+    "commands": [{
+      "id": "d7aebda5-e8ee-4085-9344-0ce3fc472022",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "191ee07f-3c74-4185-9138-f8df18b912fe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "313bb723-52ac-4a0d-a41b-626d0a73d6dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=usuario",
+      "targets": [
+        ["id=usuario", "id"],
+        ["name=usuario", "name"],
+        ["css=#usuario", "css:finder"],
+        ["xpath=//input[@id='usuario']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad101ec3-035a-4b02-96ac-d3f11b9e7f25",
+      "comment": "",
+      "command": "type",
+      "target": "id=usuario",
+      "targets": [
+        ["id=usuario", "id"],
+        ["name=usuario", "name"],
+        ["css=#usuario", "css:finder"],
+        ["xpath=//input[@id='usuario']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "805ae211-9ee1-4fcd-bf25-fd2c50c5e220",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "ca8e2913-d8b6-4051-b4a7-d34ddf69bf42",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "ab3bb8d5-f2f6-43c2-ac72-ccbda23eb842",
+    "name": "cadastro_usuario",
+    "commands": [{
+      "id": "3759601c-b272-4579-bfa9-09e39fd71792",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/produtos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08deaf3c-0960-4c24-a4c0-d8717268cf03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09c31726-e6de-42ad-b1ce-ec517acaedb7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Novo Usuário",
+      "targets": [
+        ["linkText=Novo Usuário", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Novo Usuário')]", "xpath:link"],
+        ["xpath=//header[@id='topnav']/div/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cadastro-usuario')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Novo Usuário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c93f0a0-a0ca-49bc-91dd-4518c3dd150d",
+      "comment": "",
+      "command": "click",
+      "target": "id=usuario",
+      "targets": [
+        ["id=usuario", "id"],
+        ["name=usuario", "name"],
+        ["css=#usuario", "css:finder"],
+        ["xpath=//input[@id='usuario']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e9792de-06a5-452f-b29e-7bea5e79fadd",
+      "comment": "",
+      "command": "type",
+      "target": "id=usuario",
+      "targets": [
+        ["id=usuario", "id"],
+        ["name=usuario", "name"],
+        ["css=#usuario", "css:finder"],
+        ["xpath=//input[@id='usuario']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "samara"
+    }, {
+      "id": "e450052a-fcb4-4fa4-80e5-b8c48e1ab916",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "sama@gmail.com"
+    }, {
+      "id": "98190406-196f-466f-98af-719a8fa349b9",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1234567"
+    }, {
+      "id": "dc75dec6-9a29-406e-aa53-fc4e48202f4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmacao",
+      "targets": [
+        ["id=confirmacao", "id"],
+        ["name=confirmacao", "name"],
+        ["css=#confirmacao", "css:finder"],
+        ["xpath=//input[@id='confirmacao']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "1234567"
+    }, {
+      "id": "a9533458-0ee0-4ce9-b643-09bd5bb587a7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=confirmacao",
+      "targets": [
+        ["id=confirmacao", "id"],
+        ["name=confirmacao", "name"],
+        ["css=#confirmacao", "css:finder"],
+        ["xpath=//input[@id='confirmacao']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "1b0c740a-83e5-4f91-80bf-3b5e0c7cd398",
+    "name": "cadastro de produtos",
+    "commands": [{
+      "id": "b9d03a5a-e646-4ba9-bf63-56cfb28f85f2",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/produtos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d470bb7-421e-4d6a-a8a3-3fe0f6f30381",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1789b482-4148-4fde-abd5-8addced3d8c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > a:nth-child(1)",
+      "targets": [
+        ["css=form > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cadastro-produto')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95296a80-cd12-4a06-8b98-090f3d942e42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user:nth-child(3)",
+      "targets": [
+        ["css=.user:nth-child(3)", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3f9dcd1-2b7f-433e-9852-8f56353f6908",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa389e45-47d1-4676-a39d-c1f73998d1cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "gabinete"
+    }, {
+      "id": "ce1a4786-b4f6-4b4d-8993-f39bdd31805f",
+      "comment": "",
+      "command": "type",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["name=tipo", "name"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//input[@id='tipo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "tecnologia"
+    }, {
+      "id": "a76d18ee-57fd-4e99-93f2-d230a2b9d55f",
+      "comment": "",
+      "command": "type",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["name=preco", "name"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "8ff4ffc8-5be4-4f22-b3f2-95ac3ca02bdb",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["name=preco", "name"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "91b7cbb1-9f63-4f59-9432-1056b570cd4b",
+    "name": "excluir produtos",
+    "commands": [{
+      "id": "6e37a601-c064-4dea-8782-e53426174a86",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/produtos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc185ba0-228d-4563-8ba8-b543a022fb85",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b4b0c77-8968-4ff4-9053-59f7bf0e3ec0",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2)",
+      "targets": [
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir Produto')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '')])[5]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca1432d7-dfda-47ec-ac01-8f0a801f8890",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2)",
+      "targets": [
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir Produto')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '')])[5]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "834f1f89-b674-4dd6-b50d-3119b3d02f3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2)",
+      "targets": [
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir Produto')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '')])[5]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1035ed75-a7fb-45a0-8000-aab4123f5cac",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2)",
+      "targets": [
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir Produto')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '')])[5]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c0be737c-17eb-4173-80df-f37788eaaf20",
+    "name": "sair",
+    "commands": [{
+      "id": "31261bba-ee69-4e72-9028-21874f95f4e3",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/produtos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fe68ad1-5f1c-42ea-b44a-dee394600731",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f7b09ad-97e0-442b-b53f-05c67b96a9e5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//header[@id='topnav']/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sair')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "eafe8d1f-23bd-4e94-8141-71ca88b86a02",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:5000/", "http://127.0.0.1:5000/produtos"],
+  "plugins": []
+}
